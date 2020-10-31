@@ -1,0 +1,11 @@
+name: check-typo-fix
+
+on: [push, pull_request]
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Check if typo is fixed
+      run: grep -F 'quick' ./typo.md
