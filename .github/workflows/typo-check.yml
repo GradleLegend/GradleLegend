@@ -1,6 +1,6 @@
 name: check-typo-fix
 
-on: [push, pull_request]
+on: [pull_request]
 
 jobs:
   run:
